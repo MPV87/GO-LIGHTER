@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>GO® | Zuverlässige Feuerzeuge für jeden Tag</title>
-<meta name="description" content="GO® Feuerzeuge: einfache Bedienung, zuverlässige Funktion und ein überzeugendes Preis-Leistungs-Verhältnis. Piezo- und Turbo-Modelle in vielen Farben, auch als bedruckbare Werbefeuerzeuge. Eine Marke der KP Plattner GmbH.">
+<meta name="description" content="GO® Feuerzeuge: einfache Bedienung, zuverlässige Funktion und ein überzeugendes Preis-Leistungs-Verhältnis. Piezo- und Turbo-Modelle in vielen Farben – als Werbefeuerzeug im Digital- oder Siebdruck und als Alltagsfeuerzeug für Supermärkte, Trafiken, Tankstellen und Bars. Eine Marke der KP Plattner GmbH.">
 <link rel="canonical" href="https://www.go-lighter.com/">
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="favicon.png">
@@ -46,7 +46,7 @@
    "name": "GO®",
    "alternateName": "GO",
    "slogan": "Zuverlässige Feuerzeuge für jeden Tag.",
-   "description": "GO® ist eine Marke der KP Plattner GmbH für Feuerzeuge: Piezo- und Turbo-Modelle in vielen Farben, auch als bedruckbare Werbefeuerzeuge.",
+   "description": "GO® ist eine Marke der KP Plattner GmbH für Feuerzeuge: Piezo- und Turbo-Modelle in vielen Farben, als Werbefeuerzeuge im Digital- oder Siebdruck und als Alltagsfeuerzeuge für den Handel.",
    "url": "https://www.go-lighter.com/"
   },
   {
@@ -167,11 +167,21 @@ header.top nav a:hover { background: var(--soft); }
 
 /* Werbung */
 .promo { background: var(--blue); color: #fff; }
-.promo .wrap { padding-block: clamp(64px, 9vw, 112px); display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 6vw, 96px); align-items: center; }
-.promo h2 { font-size: clamp(2rem, 4.2vw, 3rem); }
-.promo p { color: #EAF3FB; font-size: 1.0625rem; }
-.promo .logo-slot { margin-top: 28px; border: 2px dashed rgba(255,255,255,.6); border-radius: 18px; padding: 20px 24px; font-family: var(--f-head); font-weight: 700; display: inline-block; }
-@media (max-width: 860px) { .promo .wrap { grid-template-columns: 1fr; } }
+.promo .wrap { padding-block: clamp(64px, 9vw, 112px); display: grid; gap: 36px; }
+.promo .head { display: grid; gap: 14px; justify-items: start; }
+.promo .head h2 { font-size: clamp(2rem, 4.2vw, 3rem); }
+.promo .uses { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.promo .use { background: #fff; color: var(--navy); border-radius: 28px; padding: clamp(28px, 4vw, 44px); display: grid; gap: 14px; align-content: start; }
+.promo .use h3 { font-size: clamp(1.625rem, 3vw, 2.125rem); }
+.promo .use .lead { font-family: var(--f-head); font-weight: 700; color: var(--blue); font-size: 1.125rem; margin-top: -6px; }
+.promo .use p { color: var(--muted); }
+.promo .use.dark { background: var(--navy); color: #fff; }
+.promo .use.dark p { color: #C5CAE0; }
+.promo .use.dark .lead { color: #9DC6EA; }
+.promo .tags { list-style: none; margin: 6px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.promo .tags li { padding: 6px 14px; border-radius: 99px; background: var(--soft); color: var(--petrol); font-family: var(--f-head); font-weight: 700; font-size: .8125rem; }
+.promo .use.dark .tags li { background: rgba(255,255,255,.1); color: #fff; }
+@media (max-width: 860px) { .promo .uses { grid-template-columns: 1fr; } }
 
 /* Closing */
 .closing .wrap { padding-block: clamp(72px, 10vw, 128px); text-align: center; display: grid; justify-items: center; gap: 20px; }
@@ -256,7 +266,7 @@ footer .copy { font-size: .8125rem; }
     <nav aria-label="Seitennavigation">
       <a href="#produkte">Produkte</a>
       <a href="#farben">Farben</a>
-      <a href="#werbefeuerzeuge">Werbefeuerzeuge</a>
+      <a href="#einsatz">Werbung &amp; Handel</a>
       <a class="opt" href="#kontakt">Kontakt</a>
     </nav>
   </div>
@@ -278,7 +288,7 @@ footer .copy { font-size: .8125rem; }
   <section class="basics">
     <div class="wrap">
       <h2 class="rv">Alles, was ein gutes Feuerzeug braucht. <span>Nicht mehr. Nicht weniger.</span></h2>
-      <p class="rv">GO® steht für unkomplizierte Produkte, die zuverlässig funktionieren. Klassische Formen, eine breite Farbauswahl und unterschiedliche Zündtechniken sorgen für vielseitige Einsatzmöglichkeiten – vom täglichen Gebrauch bis zum individuell bedruckten Werbefeuerzeug.</p>
+      <p class="rv">GO® steht für unkomplizierte Produkte, die zuverlässig funktionieren. Klassische Formen, eine breite Farbauswahl und unterschiedliche Zündtechniken sorgen für vielseitige Einsatzmöglichkeiten – vom Alltagsfeuerzeug im Handel bis zum individuell bedruckten Werbefeuerzeug.</p>
     </div>
   </section>
 
@@ -311,11 +321,25 @@ footer .copy { font-size: .8125rem; }
     </div>
   </section>
 
-  <section class="promo" id="werbefeuerzeuge">
+  <section class="promo" id="einsatz">
     <div class="wrap">
-      <h2 class="rv">Für individuelle Markenauftritte</h2>
-      <div class="rv">
-        <p>Verschiedene GO® Modelle können bedruckt werden und werden bei KP Plattner als Werbefeuerzeuge angeboten. Besonders schlichte Modelle bieten dabei viel Fläche für Logos und individuelle Designs.</p>
+      <div class="head rv">
+        <span class="pill">Werbung &amp; Handel</span>
+        <h2>Für Ihre Marke. Für Ihr Regal.</h2>
+      </div>
+      <div class="uses">
+        <article class="use rv" id="werbefeuerzeuge">
+          <h3>Werbefeuerzeuge</h3>
+          <p class="lead">Ihr Logo in der Hand Ihrer Kunden.</p>
+          <p>Viele GO® Modelle lassen sich individuell veredeln – im Digitaldruck oder im Siebdruck. Besonders schlichte Modelle bieten viel Fläche für Logos und eigene Designs. Angeboten werden die Werbefeuerzeuge über KP Plattner.</p>
+          <ul class="tags"><li>Digitaldruck</li><li>Siebdruck</li></ul>
+        </article>
+        <article class="use dark rv" id="handel">
+          <h3>Für den Handel</h3>
+          <p class="lead">Schnelldreher für jeden Tag.</p>
+          <p>Zuverlässig, unkompliziert und mit überzeugendem Preis-Leistungs-Verhältnis: GO® Alltagsfeuerzeuge sind gemacht für den schnellen Abverkauf – überall dort, wo Feuerzeuge täglich über den Tresen gehen.</p>
+          <ul class="tags"><li>Supermärkte</li><li>Trafiken</li><li>Tankstellen</li><li>Bars</li></ul>
+        </article>
       </div>
     </div>
   </section>
