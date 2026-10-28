@@ -143,7 +143,7 @@ header.top nav a:hover { background: var(--soft); }
 .tech .card.turbo { background: var(--petrol); color: #fff; }
 .tech .card.turbo h3 small { color: #9DC6EA; }
 .tech .card.turbo p { color: #D3E2F0; position: relative; z-index: 1; }
-.tech .marquee { position: absolute; left: 0; right: 0; bottom: 18px; white-space: nowrap; font-family: var(--f-head); font-weight: 700; font-size: 5rem; line-height: 1; color: transparent; -webkit-text-stroke: 1px rgba(255,255,255,.22); pointer-events: none; }
+.tech .marquee { position: absolute; left: 0; right: 0; bottom: 18px; white-space: nowrap; font-family: var(--f-head); font-weight: 700; font-size: 5rem; line-height: 1; color: #fff; opacity: .24; filter: url(#outline-union); pointer-events: none; }
 .tech .marquee span { display: inline-block; animation: run 14s linear infinite; }
 @keyframes run { to { transform: translateX(-50%); } }
 .tech .card.turbo { padding-bottom: 120px; }
@@ -259,6 +259,7 @@ footer .copy { font-size: .8125rem; }
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="outline-union" x="-5%" y="-20%" width="110%" height="140%" color-interpolation-filters="sRGB"><feMorphology in="SourceAlpha" operator="dilate" radius="1" result="grow"/><feComposite in="grow" in2="SourceAlpha" operator="out" result="ring"/><feFlood flood-color="#fff"/><feComposite in2="ring" operator="in"/></filter>
   <symbol id="brand-formula" viewBox="-0.5 -0.5 171.75 45.25"><clipPath id="bclip-1">
 <path clip-rule="nonzero" d="M 2.83 1 L 26 1 L 26 37 L 2.83 37 Z M 2.83 1 " />
 </clipPath>
